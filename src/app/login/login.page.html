@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Calculator - Nucleo 3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item>
+      <ion-input label="User" labelPlacement="floating" placeholder="Please, insert a user" [(ngModel)]="User"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Password" labelPlacement="floating" placeholder="Please, insert a password" [(ngModel)]="Password"></ion-input>
+    </ion-item>
+    <ion-button fill="outline" (click)="inicio()">LogIn</ion-button>
+  </ion-list>
+</ion-content>
